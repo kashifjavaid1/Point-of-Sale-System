@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { ComponentToPrint } from "../component/Print";
 
 export default function About() {
   const [products, setProducts] = useState([]);
