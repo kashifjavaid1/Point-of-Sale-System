@@ -28,6 +28,7 @@ export default function Post() {
     });
 
     if (findProductInCart) {
+      // new product add
       let newCart = [];
       let newItem;
 
