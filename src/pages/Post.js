@@ -64,7 +64,7 @@ export default function Post() {
   const handlePrint = () => {
     handleReacttoPrint();
   };
-
+  // remove products
   const removeProduct = async (product) => {
     const newCart = cart.filter((cartItem) => cartItem.id !== product.id);
     setCart(newCart);
@@ -74,6 +74,7 @@ export default function Post() {
     fetchProducts();
   }, []);
 
+  // show total amount products
   useEffect(() => {
     let newTotalAmount = 0;
     cart.forEach((icart) => {
